@@ -1,0 +1,18 @@
+$font:'Gilroy';
+
+@import './header.scss';
+@import './karuselItem.scss';
+@import './catalogs.scss';
+@import './tovarDiscaunt.scss';
+@import './workwithus.scss';
+
+
+
+body{
+    position: relative;
+    left: $left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1350px;
+   }

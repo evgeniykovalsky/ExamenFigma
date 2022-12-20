@@ -1,0 +1,98 @@
+.catalogWrapper{
+    position: absolute;
+    top:818px;
+    
+    width: 1349px;
+    height: 955px;
+    // border: 2px solid black;
+
+    background: url('../images/backgroundLeft.png') no-repeat;
+    //background: url('../images/zernaBackLeft.png') no-repeat;
+    background-position: left;
+    background-size: contain;
+  
+    .main_catalog_text{
+       position: absolute;
+       left: 84px;
+        width: 469px;
+        height: 46px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 44px;
+       color: #000000;
+    }
+    .catalogItems{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 20px;
+        width: 1180px;
+        position: absolute;
+        left: 84px;
+        top: 106px;
+
+       
+       
+        .catalogItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 280px;
+            height: 381px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 21.2553px rgba(146, 146, 146, 0.2);
+            border-radius: 14px;
+             margin-left: 30px;
+          
+            .imgUP{
+                position: absolute;
+                top: -20px;
+            }
+            .button__buy{
+               
+                width: 233px;
+                height: 42px;
+               background: #F9B300;
+               border-radius: 3px;
+               text-align: center;
+               font-family: 'Gilroy';
+               font-style: normal;
+               font-weight: 700;
+              font-size: 18px;
+               line-height: 22px;
+               &:hover{
+                background-color: #e7a90c;
+                border: 1px solid #584003 ;
+                cursor: pointer;
+                     }
+
+               color: #FFFFFF;
+               p{
+                margin: 10px;
+               }
+
+            }
+            .text_catalog{
+                          
+                width: 234px;
+                height: 21px;                         
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                
+                color: #000000;
+                 
+            }
+        }
+
+
+
+
+    }
+}

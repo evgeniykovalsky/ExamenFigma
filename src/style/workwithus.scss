@@ -1,0 +1,32 @@
+.wrapperWithUs {
+    position: absolute;
+    top: 2020px;
+
+    .titleWisUs {
+        height: 203px;
+        width: 1350px;
+        background: url('../images/backgroundWithUs.png') no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        .title {
+            position: relative;
+            width: 414px;
+            height: 87px;
+            left: 684px;
+            top: 95px;
+
+            font-family: $font;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 35px;
+            line-height: 44px;
+
+            color: #000000;
+
+        }
+
+    }
+
+
+}

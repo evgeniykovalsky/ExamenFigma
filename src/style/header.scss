@@ -1,0 +1,114 @@
+
+$left:calc((100% - 1349px) / 2);
+
+.header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    width: 1349px;
+    height: 113px;
+    top:15px;
+    left:$left;
+    background: #FFFFFF;
+    box-shadow: 0px 3.54254px 14.1702px rgba(157, 157, 157, 0.25);
+    z-index: 1;
+    // border: 1px dashed black;
+
+    .image25{
+        img{
+        position: absolute;
+        width: 179px;
+        height: 80px;
+        left: 84px;
+        top: 20px;}
+        
+    }
+    .find{
+        position: absolute;
+        width: 880px;
+        height:fit-content;
+        min-height: 82px;
+        left: 285px;
+        top: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
+        border-radius: 30px;
+        .findUp{
+            position: absolute;
+            width: 880px;
+            height: 41px;
+            left: 0px;
+            top: 0px;
+            border-bottom: 2px solid #E9E9E9;
+        }
+        .findDown {
+            position: absolute;
+            height: auto;
+            min-height: 115px;
+            left: 72px;
+            top: 51px;
+           
+           select{
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border: none;
+                font-family: $font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 130%;
+                color: #C4C4C4;
+                option{
+                    color: #000000;
+                   
+                }
+               
+
+            }
+        }
+        img{
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            left: 20px;
+            top: 15px;
+           
+                }
+        .lookInput{
+            position: absolute;
+            width: 184px;
+            height: 21px;
+            left: 72px;
+            top: 15px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 130%;
+            color: #000000;
+            border: none;
+
+        }
+    }
+    .korzina{
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        left: 1180px;
+        top: 49px;
+        
+    }
+    .enter{
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        left: 1242px;
+         top: 49px;
+
+        
+    }
+
+}
