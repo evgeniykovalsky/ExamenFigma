@@ -1,0 +1,86 @@
+.cookWrapper {
+    position: absolute;
+    left: $left;
+    top: 2600px;
+    height: 774px;
+    width: 1349px;
+    background: url('../images/image 10.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    .footerHowWeWork{
+        position: relative;
+        top:140px;
+        background: url('../images/footerHowWeWork.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 211px;
+        z-index: -1;
+
+
+    }
+
+    .cookText {
+        position: relative;
+        top: 165px;
+        display: flex;
+        flex-direction: column;
+        left: 84px;
+
+        .titleCook {
+            width: 522px;
+            height: 43px;
+            margin-bottom: 70px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 35px;
+            line-height: 44px;
+
+            color: #FFFFFF;
+        }
+
+        .descripCook {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            
+            width: 882px;
+            height: 272px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
+            /* or 23px */
+
+
+            color: #FFFFFF;
+        }
+        .cookButton{
+            position: relative;
+            width: 283px;
+            height: 56px;
+            top: 70px;
+            background: #F9B300;
+            border-radius: 3.54254px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 17px;
+            color: #FFFFFF;
+            text-align: center;
+            cursor: pointer;
+            &:hover{
+                background-color: #e7a90c;
+                border: 1px solid #584003 ;
+            }
+            p{
+                margin-top: 20px;
+            }
+        }
+
+    }
+}

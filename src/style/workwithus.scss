@@ -28,5 +28,90 @@
 
     }
 
+    .wrapperDescription {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: url('../images/backgruondWisUsdown.png') no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 1350px;
+        position: relative;
+        margin: 0px;
+        top: -115px;
+
+        .imagesWisUs {
+            position: relative;
+            left: 86px;
+
+            .cup {
+                position: relative;
+                top: 200px;
+                width: 356px;
+                height: 307px;
+                filter: drop-shadow(3.54254px 7.08508px 7.08508px rgba(0, 0, 0, 0.15));
+                z-index: 2;
+            }
+
+            .zerna {
+                position: relative;
+                top: -200px;
+                width: 534px;
+                height: 355px;
+                z-index: 0;
+                ;
+
+            }
+
+        }
+
+        .itemsWhy {
+            position: relative;
+            top: 170px;
+            width: 450px;
+            height: 300px;
+            margin-left: 10px;
+           
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .item__why {
+                display: flex;
+                justify-content: space-between;
+
+                .text {
+                    width: 350px;
+                    height: 45px;
+
+                    &>span {
+                        display: block;
+                        font-family: $font;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 21px;
+                        line-height: 25px;
+
+                        color: #000000;
+                    }
+
+                }
+
+            }
+        }
+
+
+    }
+
+    .withUsfooter{
+        position: absolute;
+        top:560px;
+        background: url('../images/withusfooter.png') no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 1350px;
+        height: 350px;
+    }
+
 
 }

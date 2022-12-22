@@ -25,11 +25,7 @@ export default function TovarDiscauntItem({ item }) {
     });
 
     return (
-
         <>
-
-
-
             <div className="cardDiscauntItem">
                 <div className='skidky'>
                     %

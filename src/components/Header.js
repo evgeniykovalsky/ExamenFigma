@@ -26,23 +26,7 @@ export default function Header(){
            <select  value={rezFind} onChange={(event)=>setRezFind(event.target.value)}>
            {options}
            </select>
-           sdlkfjslkfskdf
-           lksdfjskldf
-           lasfkdafjsdl
-           lorem.10
-           3
-           asdfasdfkl;jasd;fjaskldfasldkfjasdljflasdkj dasl;djflaskdj
-           \
-           asdfasdfklasdf
-           asdfasdfklasdfasdf\
-           asdf\
-           asdfasdf\
-           asdf\
-           asdf\
-           asdf\
-           asdf\
-           asdf\
-           asd
+           
           </div>
          
         </div>

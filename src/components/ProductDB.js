@@ -9,7 +9,7 @@ const AllProduct = [
         grade: 4,
         kislinka: 8,
         gorchinka: 7,
-        nasishenost: 8,
+        nasishenost: 2,
         discaunt: true
 
 
@@ -21,10 +21,10 @@ const AllProduct = [
         vaga: [150, 250, 500, 3000],
         price: [250, 350, 500, 2000],
         countVidgukiv: 32,
-        grade: 4,
-        kislinka: 8,
-        gorchinka: 7,
-        nasishenost: 8,
+        grade: 2,
+        kislinka: 9,
+        gorchinka: 10,
+        nasishenost: 10,
         discaunt: true
     }, 
     {
@@ -34,10 +34,10 @@ const AllProduct = [
         vaga: [150, 250, 500, 2000],
         price: [250, 350, 500, 1000],
         countVidgukiv: 32,
-        grade: 4,
+        grade: 5,
         kislinka: 8,
         gorchinka: 7,
-        nasishenost: 8,
+        nasishenost: 4,
         discaunt: true
     }
 ];

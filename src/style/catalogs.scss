@@ -6,10 +6,13 @@
     height: 955px;
     // border: 2px solid black;
 
-    background: url('../images/backgroundLeft.png') no-repeat;
-    //background: url('../images/zernaBackLeft.png') no-repeat;
+    background-image: url('../images/backgroundLeft.png'),
+                url('../images/zernaBackLeft.png');
+
+
     background-position: left;
-    background-size: contain;
+    background-size: auto;
+    background-repeat: no-repeat;
   
     .main_catalog_text{
        position: absolute;

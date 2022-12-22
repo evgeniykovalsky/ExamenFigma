@@ -1,0 +1,33 @@
+.footerWpapper {
+    position: absolute;
+    top: 4100px;
+    height: 200px;
+
+    img {
+        position: absolute;
+        left: 84px;
+        top: 60px;
+        width: 180px;
+        height: 80px;
+
+    }
+
+
+    .links {
+        position: absolute;
+        left: 863px;
+        top: 88px;
+        display: flex;
+        justify-content: space-between;
+        width: 360px;
+        height: 21px;
+        font-family: $font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #000000;
+    }
+
+}
