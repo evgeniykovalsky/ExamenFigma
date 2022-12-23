@@ -3,6 +3,7 @@ import catalogImg1 from '../images/catalogImg1.png';
 import catalogImg2 from '../images/catalogImg2.png';
 import catalogImg3 from '../images/catalogImg3.png';
 import catalogImg4 from '../images/catalogImg4.png';
+import {Outlet,Link} from 'react-router-dom';
 
 export default function Catalogs(){
     return(
@@ -12,7 +13,7 @@ export default function Catalogs(){
            <div className="catalogItems">
                  <div className="catalogItem">
                     <img src={catalogImg1} alt='coffe'></img>
-                    <p className="text_catalog">Свежеобжаренный кофе</p>
+                  <Link to="/catalogCoffe">  <p className="text_catalog">Свежеобжаренный кофе</p></Link>
                  </div>
                  <div className="catalogItem">
                  <img src={catalogImg2} className="imgUP" alt='coffe'></img>

@@ -10,7 +10,11 @@ $left:calc((100% - 1349px) / 2);
     background-size: contain;
     top:128px;
     
-    
+    a{
+        text-decoration: none;
+        color:#FFFFFF;
+       &:hover{color: #FFFFFF;} 
+    }
 
     .image_cup1{
         position: absolute;
@@ -95,6 +99,7 @@ $left:calc((100% - 1349px) / 2);
             &:hover{
                 background-color: #e7a90c;
                 border: 1px solid #584003 ;
+                color:#FFFFFF;
             }
             p{
                 margin-top: 17px;

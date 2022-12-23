@@ -8,6 +8,8 @@ $font:'Gilroy';
 @import './howWeCook.scss';
 @import './news.scss';
 @import './footer.scss';
+@import './header_catalog.scss';
+@import './catalog_coffee_header2.scss';
 
 
 
@@ -19,4 +21,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     width: 1350px;
+   }
+
+   a{
+    text-decoration: none;
    }

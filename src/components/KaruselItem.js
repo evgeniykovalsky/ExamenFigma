@@ -3,6 +3,7 @@ import imageCup from '../images/cupofcoffee.png';
 import zernaCoffee from '../images/zernacoffee.png';
 import ellipseBlack from '../images/elipseBlack.png';
 import ellipseEmpty from '../images/ellipseEmpty.png';
+import {Link} from "react-router-dom";
 
 export default function KaruselItem(){
     return(
@@ -16,7 +17,7 @@ export default function KaruselItem(){
            Мы обжариваем кофе каждые выходные.
            </p>
            </div>
-           <div className="button_catalog zindex"><p>Посмотреть каталог</p></div>
+           <div className="button_catalog zindex"> <Link to="/catalogCoffe"> <p>Посмотреть каталог</p></Link></div>
            </div>
 
            <div className="image_cup1 zindex">
