@@ -9,7 +9,7 @@ export default function CatalogCoffeHeader2() {
             <div className="Navigation">
                 <Link to="/">Главная</Link>
                 <img src={Tochka} alt="tochka" />
-                <Link to="/">Каталог товаров</Link>.
+                <Link to="/">Каталог товаров</Link>
                 <img src={Tochka} alt="tochka" />
                 <Link to="/">Свежеобжареный кофе</Link>
 
@@ -21,6 +21,9 @@ export default function CatalogCoffeHeader2() {
             <div className="zernaCoffee">
                 <img src={zerna} alt="zerna"/>
             </div>
+            <div className="ellipse"></div>
+
+
 
         </div>
 

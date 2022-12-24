@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, createContext } from "react";
 import emptyStar from '../images/Star 10.png';
 import emptyEllipse from '../images/Ellipse 42.png';
 
@@ -8,6 +8,14 @@ const Context = (props) => {
 
 //    const [vaga, setVaga] = useState(0);
 //     const [price, setPrice] = useState(item.price[0]);
+
+ const [objarkaZerna, setObjarka] = useState(1);
+ const[geografia,setGeografia]=useState("");
+ const[kislinkaF,setKislinkaF]=useState("");
+ const[processing_method,setProcessingMetod]=useState("");
+ const[special,setSpecial]=useState("");
+ const[vid_coffee,setVid_coffee]=useState("");
+ const[pribor,setPribor]=useState("");
 
     const grade = (item) => {
         let c = [];
@@ -69,13 +77,38 @@ const Context = (props) => {
 
         return c;
     }
-   
+    const objarkaImg = (count) => {
+        let c = [];
+        for (let i = 0; i < count; i++) {
+
+            c.push(<img src="../images/oneZerno.png" alt="zerno" />);
+        }
+        
+        return c;
+    }
 
     const value = {
         grade,
         kislinka,
         gorchinka,
-        nasishenost
+        nasishenost,
+        objarkaImg,
+        objarkaZerna,
+        setObjarka,
+        geografia,
+        setGeografia,
+        kislinkaF,
+        setKislinkaF,
+        processing_method,
+        setProcessingMetod,
+        special,
+        setSpecial,
+        vid_coffee,
+        setVid_coffee,
+        pribor,
+        setPribor
+
+
 
     };
     return (
