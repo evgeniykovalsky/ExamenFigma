@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CoffeShopContext } from './Context';
 import line from '../images/Rectangle 35.png';
 import turka from "../images/turka.png";
@@ -10,12 +10,24 @@ import Aeropress from "../images/aeropress.png";
 import cupFilter from "../images/cupFilter.png";
 import avtomat from "../images/avtomat.png";
 import bigLine from "../images/Rectangle 37.png";
+import CatalogCoffeeResult from "../components/CatalogCoffeeResult";
+import CatalogProduct from "../components/ProductCatalogDB"
+import imageLogo from '../images/image25.png';
 
 
 export default function CatalogCoffeeFilter() {
     const data = useContext(CoffeShopContext);
-    console.log(data.pribor);
+    const[rezultFilter,setResultFilter]=useState(CatalogProduct);
+
+    useEffect(()=>{
+        
+    })
+   
+
+
+
     return (
+        <>
         <div className="filters">
             <div className="firstRow">
                 <div className="stepen_objarki">
@@ -124,17 +136,33 @@ export default function CatalogCoffeeFilter() {
                 <div className="iconsFilterItem" onClick={()=>data.setPribor("cup")}>
                     <div className="title">Чашка</div>
                     <div className="filterImg">
-                        <img src={cupFilter} alt="" />
+                        <img src={cupFilter} alt="cup" />
                     </div>
                 </div>
                 <div className="iconsFilterItem" onClick={()=>data.setPribor("Avtomat")}>
                     <div className="title">Автомат</div>
                     <div className="filterImg">
-                        <img src={avtomat} alt="" />
+                        <img src={avtomat} alt="avtomat" />
                     </div>
                 </div>
             </div>
 
         </div>
+        <div className="filterRezult">
+        <CatalogCoffeeResult  item={rezultFilter}/>
+        <div className="footerWpapper1">
+          
+          <img src={imageLogo} alt="image25"></img>
+          <div className='links'>
+          <div className='katalog'>Каталог товаров</div>
+          <div className='blog'>Блог</div>
+          <div className='kontacts'>Контакты</div>
+          
+          </div>
+
+      </div>
+        </div>
+       
+        </>
     );
 }

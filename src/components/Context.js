@@ -77,6 +77,16 @@ const Context = (props) => {
 
         return c;
     }
+    const objarka = (item) => {
+        let c = [];
+        for (let i = 0; i < item.projarka; i++) {
+
+            c.push(<img src="../images/oneZerno.png" alt="zerno" />);
+        }
+       
+
+        return c;
+    }
     const objarkaImg = (count) => {
         let c = [];
         for (let i = 0; i < count; i++) {
@@ -106,7 +116,8 @@ const Context = (props) => {
         vid_coffee,
         setVid_coffee,
         pribor,
-        setPribor
+        setPribor,
+        objarka
 
 
 

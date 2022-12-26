@@ -10,6 +10,7 @@ const AllProduct = [
         kislinka: 8,
         gorchinka: 7,
         nasishenost: 2,
+        projarka:5,
         discaunt: true
 
 
@@ -25,6 +26,7 @@ const AllProduct = [
         kislinka: 9,
         gorchinka: 10,
         nasishenost: 10,
+        projarka:3,
         discaunt: true
     }, 
     {
@@ -38,6 +40,7 @@ const AllProduct = [
         kislinka: 8,
         gorchinka: 7,
         nasishenost: 4,
+        projarka:4,
         discaunt: true
     }
 ];

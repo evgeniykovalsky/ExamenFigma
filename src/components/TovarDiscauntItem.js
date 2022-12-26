@@ -44,7 +44,7 @@ export default function TovarDiscauntItem({ item }) {
                         <div className="grade">
                             <div className="star">{data.grade(item)}</div>
                             <div className='gradetext'><span>{item.grade}.0 </span>(32 отзыва)</div>
-                            <img src={zerna} alt="zerna" />
+                           <div className='objarka'> {data.objarka(item)}</div>
                         </div>
                         <div className='kislinka'>
                             <div className="parametr"> Кислинка</div>

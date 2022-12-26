@@ -181,3 +181,288 @@
     }
 
 }
+.filterRezult{
+    position:absolute;
+    top:1000px;
+    left:84.5px;
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .cardDiscauntItem {
+        box-sizing: border-box;
+        width: 280px;
+        height: 461px;
+        margin-right: 15px;
+        margin-bottom: 50px;
+        background: #FFFFFF;
+        border: 0.708508px solid #E4E4E4;
+        box-shadow: 0px 0px 20px rgba(201, 201, 201, 0.25);
+        border-radius: 14px;
+
+        .cardFooter {
+            position: relative;
+            left: 25px;
+            top: 0px;
+
+            .title {
+
+                width: 163px;
+                height: 22px;
+                font-family: $font;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 22px;
+                color: #222222;
+            }
+
+            .description {
+
+                width: 183px;
+                height: 29px;
+                font-family: $font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                color: #222222;
+                margin-top: 8px;
+
+            }
+
+            .oldPrice {
+
+                width: 48px;
+                height: 21px;
+                font-family: $font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                text-decoration-line: line-through;
+                color: #C6C6C6;
+
+            }
+
+            .newPrice {
+
+                width: 66px;
+                height: 31px;
+                font-family: $font;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 30px;
+                color: #222222;
+
+            }
+
+            .buttonKoshik {
+                position: relative;
+                width: 125px;
+                height: 33px;
+                left: 100px;
+                top: -30px;
+
+
+                background: #F9B300;
+                border-radius: 4px;
+                font-family: $font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                /* identical to box height */
+
+                text-align: center;
+
+                color: #FFFFFF;
+
+                p {
+                    position: relative;
+                    top: 10px;
+                }
+
+                &:hover {
+                    background-color: #e7a90c;
+                    border: 1px solid #584003;
+                    cursor: pointer;
+                }
+
+            }
+
+
+
+        }
+
+
+
+        .skidky {
+            background: url('../images/Ellipse 6.png') no-repeat;
+            padding: 7px;
+            text-align: center;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            left: 25px;
+            top: -25px;
+            border-radius: 50%;
+            font-size: 24px;
+            font-weight: 900;
+
+
+
+            background: #F9B300;
+        }
+
+        .text {
+            position: relative;
+            width: 47px;
+            height: 15px;
+            left: 25px;
+            top: -10px;
+
+            font-family: $font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            color: #F9B300;
+
+        }
+
+        select {
+            box-sizing: border-box;
+            position: relative;
+            width: 93px;
+            height: 23px;
+            left: 162px;
+            top: -45px;
+            background: #FFF7E1;
+            border: 0.708508px solid #F9B300;
+            border-radius: 4px;
+        }
+
+        .coffeDescription {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .descImg {
+                position: relative;
+                width: 120px;
+                height: 218px;
+                left: 25px;
+                top: -20px;
+
+            }
+
+            .parametr {
+                width: 56px;
+                height: 15px;
+                margin-top: 8px;
+                font-family: $font;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                color: #222222;
+
+            }
+
+            .descText {
+                position: relative;
+                left: 16px;
+                top: -10px;
+
+                .gradetext {
+                    display: inline-block;
+                    width: 80px;
+                    height: 11px;
+                    font-family: $font;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 12px;
+
+                    color: #5B5B5B;
+                }
+
+                .gradetext>span {
+                    width: 23px;
+                    height: 17px;
+                    font-family: $font;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #222222;
+
+                }
+
+                .star {
+                    img {
+                        height: 18px;
+                        width: 18px;
+                        margin-left: 1px;
+                    }
+
+
+
+                }
+
+                .kislinka,
+                .gorchinka,
+                .nasishenost {
+                    img {
+                        width: 7px;
+                        height: 7px;
+                        margin-left: 2px;
+                    }
+
+                }
+                .objarka{
+                    img{margin-left: 3px;}
+                    
+                }
+
+
+
+            }
+        }
+    }
+    .footerWpapper1 {
+       position: absolute;
+       top:1500px;
+        height: 200px;
+        left:-70px;
+    
+        img {
+            position: absolute;
+            left: 84px;
+            top: 60px;
+            width: 180px;
+            height: 80px;
+    
+        }
+    
+    
+        .links {
+            position: absolute;
+            left: 863px;
+            top: 88px;
+            display: flex;
+            justify-content: space-between;
+            width: 360px;
+            height: 21px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+    
+            color: #000000;
+        }
+    
+    }
+}
