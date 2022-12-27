@@ -1,6 +1,7 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext,useEffect} from "react";
 import emptyStar from '../images/Star 10.png';
 import emptyEllipse from '../images/Ellipse 42.png';
+import CatalogProduct from "../components/ProductCatalogDB";
 
 export const CoffeShopContext = createContext();
 
@@ -9,13 +10,100 @@ const Context = (props) => {
 //    const [vaga, setVaga] = useState(0);
 //     const [price, setPrice] = useState(item.price[0]);
 
- const [objarkaZerna, setObjarka] = useState(1);
- const[geografia,setGeografia]=useState("");
- const[kislinkaF,setKislinkaF]=useState("");
- const[processing_method,setProcessingMetod]=useState("");
- const[special,setSpecial]=useState("");
- const[vid_coffee,setVid_coffee]=useState("");
- const[pribor,setPribor]=useState("");
+ const [objarkaZerna, setObjarka] = useState();
+ const[geografia,setGeografia]=useState();
+ const[kislinkaF,setKislinkaF]=useState();
+ const[processing_method,setProcessingMetod]=useState();
+ const[special,setSpecial]=useState();
+ const[vid_coffee,setVid_coffee]=useState();
+ const[pribor,setPribor]=useState();
+ const[rezultFilter,setResultFilter]=useState(CatalogProduct);
+ 
+
+ useEffect(()=>{
+    let newRezultFilter=[];
+
+      if(objarkaZerna!==undefined){
+
+       CatalogProduct.map((item)=>{
+        if(item.projarka===Number(objarkaZerna)&&item.geografia===geografia)
+          newRezultFilter.push(item);
+       })
+      
+       setResultFilter(newRezultFilter);
+    }
+         
+    
+        
+},[objarkaZerna,geografia])
+useEffect(()=>{
+    let newRezultFilter=[];
+
+      if(pribor!==undefined){
+        
+       CatalogProduct.map((item)=>{
+        if(item.pribor===pribor)
+          newRezultFilter.push(item);
+       })
+      
+       setResultFilter(newRezultFilter);
+    }
+         
+    
+        
+},[pribor])
+
+useEffect(()=>{
+    let newRezultFilter=[];
+
+      if(geografia!==undefined){
+        
+       CatalogProduct.map((item)=>{
+        if(item.geografia===geografia)
+          newRezultFilter.push(item);
+       })
+      
+       setResultFilter(newRezultFilter);
+    }
+         
+    
+        
+},[geografia])
+
+useEffect(()=>{
+    let newRezultFilter=[];
+
+      if(special!==undefined){
+        
+       CatalogProduct.map((item)=>{
+        if(item.spesial===special)
+          newRezultFilter.push(item);
+       })
+      
+       setResultFilter(newRezultFilter);
+    }
+         
+    
+        
+},[special])
+useEffect(()=>{
+    let newRezultFilter=[];
+
+      if(vid_coffee!==undefined){
+        
+       CatalogProduct.map((item)=>{
+        if(item.vid_coffee===vid_coffee)
+          newRezultFilter.push(item);
+       })
+      
+       setResultFilter(newRezultFilter);
+    }
+         
+    
+        
+},[vid_coffee])
+
+
 
     const grade = (item) => {
         let c = [];
@@ -117,7 +205,9 @@ const Context = (props) => {
         setVid_coffee,
         pribor,
         setPribor,
-        objarka
+        objarka,
+        rezultFilter,
+        setResultFilter
 
 
 

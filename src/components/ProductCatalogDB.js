@@ -34,7 +34,8 @@ const CatalogProduct = [
         processing:"Cухая",
         spesial:"Популярное",
         vid_coffee:"Арабика",
-        projarka:3,
+        projarka:5,
+        pribor:"Turka",
         discaunt: true
     }, 
     {
@@ -49,10 +50,11 @@ const CatalogProduct = [
         gorchinka: 7,
         nasishenost: 4,
         geografia:"Уганда",
-        projarka:3,
+        projarka:4,
         processing:"Мытая",
         spesial:"Популярное",
         vid_coffee:"Робуста",
+        pribor:"Moka",
         discaunt: true
     },
     {
@@ -70,7 +72,9 @@ const CatalogProduct = [
         processing:"Cухая",
         spesial:"Популярное",
         vid_coffee:"Арабика",
-        projarka:3,
+        pribor:"Press",
+        projarka:5,
+        pribor:"Moka",
         discaunt: true
 
 
@@ -86,11 +90,12 @@ const CatalogProduct = [
         kislinka: 9,
         gorchinka: 10,
         nasishenost: 10,
-        geografia:"Африка",
+        geografia:"Эфиопия",
         processing:"Cухая",
         spesial:"Популярное",
         vid_coffee:"Арабика",
-        discaunt: true
+        projarka:5,
+        discaunt: false
     }, 
     {
         photo: '../images/tovarFoto.png',
@@ -98,7 +103,7 @@ const CatalogProduct = [
         description: 'Свежеобжаренный кофе - описание товара, вкус, аромат',
         vaga: [150, 250, 500, 2000],
         price: [250, 350, 500, 1000],
-        countVidgukiv: 32,
+        countVidgukiv: 40,
         grade: 5,
         kislinka: 8,
         gorchinka: 7,
@@ -107,7 +112,8 @@ const CatalogProduct = [
         processing:"Мытая",
         spesial:"Популярное",
         vid_coffee:"Робуста",
-        discaunt: true
+        projarka:3,
+        discaunt:  false
     },{
         photo: '../images/tovarFoto.png',
         title: 'Colombia Supremo',
@@ -123,7 +129,8 @@ const CatalogProduct = [
         processing:"Cухая",
         spesial:"Популярное",
         vid_coffee:"Арабика",
-        discaunt: true
+        projarka:3,
+        discaunt:  false
 
 
     },
@@ -142,7 +149,8 @@ const CatalogProduct = [
         processing:"Cухая",
         spesial:"Популярное",
         vid_coffee:"Арабика",
-        discaunt: true
+        projarka:3,
+        discaunt:  false
     }, 
     {
         photo: '../images/tovarFoto.png',
@@ -157,9 +165,10 @@ const CatalogProduct = [
         nasishenost: 4,
         geografia:"Уганда",
         processing:"Мытая",
-        spesial:"Популярное",
+        spesial:"Ваш выбор",
         vid_coffee:"Робуста",
-        discaunt: true
+        projarka:3,
+        discaunt:  false
     },{
         photo: '../images/tovarFoto.png',
         title: 'Colombia Supremo',
@@ -173,9 +182,10 @@ const CatalogProduct = [
         nasishenost: 2,
         geografia:"Африка",
         processing:"Cухая",
-        spesial:"Популярное",
+        spesial:"Ваш выбор",
         vid_coffee:"Арабика",
-        discaunt: true
+        projarka:3,
+        discaunt:  false
 
 
     },
@@ -192,9 +202,10 @@ const CatalogProduct = [
         nasishenost: 10,
         geografia:"Африка",
         processing:"Cухая",
-        spesial:"Популярное",
+        spesial:"Новый урожай",
         vid_coffee:"Арабика",
-        discaunt: true
+        projarka:3,
+        discaunt:  false
     }, 
     {
         photo: '../images/tovarFoto.png',
@@ -209,9 +220,11 @@ const CatalogProduct = [
         nasishenost: 4,
         geografia:"Уганда",
         processing:"Мытая",
-        spesial:"Популярное",
+        spesial:"Новый урожай",
         vid_coffee:"Робуста",
-        discaunt: true
+        projarka:3,
+        pribor:"Avtomat",
+        discaunt:  false
     }
 ];
 export default CatalogProduct;

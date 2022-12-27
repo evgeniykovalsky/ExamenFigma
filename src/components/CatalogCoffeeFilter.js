@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext} from "react";
 import { CoffeShopContext } from './Context';
 import line from '../images/Rectangle 35.png';
 import turka from "../images/turka.png";
@@ -11,21 +11,15 @@ import cupFilter from "../images/cupFilter.png";
 import avtomat from "../images/avtomat.png";
 import bigLine from "../images/Rectangle 37.png";
 import CatalogCoffeeResult from "../components/CatalogCoffeeResult";
-import CatalogProduct from "../components/ProductCatalogDB"
+import CatalogProduct from "../components/ProductCatalogDB";
+
+
 import imageLogo from '../images/image25.png';
 
 
 export default function CatalogCoffeeFilter() {
     const data = useContext(CoffeShopContext);
-    const[rezultFilter,setResultFilter]=useState(CatalogProduct);
-
-    useEffect(()=>{
-        
-    })
-   
-
-
-
+    
     return (
         <>
         <div className="filters">
@@ -47,8 +41,7 @@ export default function CatalogCoffeeFilter() {
                 <div className="parameterCoffe">
                  <div className="bigLine"> <img src={bigLine} alt="bigLine"/></div>
                     <div className="parameterCoffeRadio">
-                        <div className="geografia" onChange={(event) => data.setGeografia(event.target.value)}>
-
+                        <div className="geografia" onChange={(event1) => data.setGeografia(event1.target.value)}>
                             <div className="title">География</div>
                             <div className="radoText"><input id="af" type="radio" value="Африка" name="geografia" /><label for="af">Африка</label></div>
                             <div className="radoText"><input id="im" type="radio" value="Йемен" name="geografia" /><label for="im">Йемен</label></div>
@@ -59,13 +52,13 @@ export default function CatalogCoffeeFilter() {
                             <div className="radoText"><input id="lat" type="radio" value="Лат. Америка" name="geografia" /><label for="lat">Лат. Америка</label></div>
                         </div>
                         <div className="twins">
-                            <div className="kislinkq" onChange={(event) => data.setKislinkaF(event.target.value)}>
+                            <div className="kislinkq radioButton" onChange={(event) => data.setKislinkaF(event.target.value)}>
                                 <div className="title">Кислинка</div>
                                 <div className="radoText"><input id="1" type="radio" value="Низкая" name="kislinka" /><label for="1">Низкая</label></div>
                                 <div className="radoText"><input id="2" type="radio" value="Средняя" name="kislinka" /><label for="2">Средняя</label></div>
                                 <div className="radoText"><input id="3" type="radio" value="Высокая" name="kislinka" /><label for="3">Высокая</label></div>
                             </div>
-                            <div className="processing_method" onChange={(event) => data.setProcessingMetod(event.target.value)}>
+                            <div className="processing_method radioButton" onChange={(event) => data.setProcessingMetod(event.target.value)}>
                                 <div className="title2">Способ обработки</div>
                                 <div className="radoText"><input id="11" type="radio" value="Сухая" name="processing" /><label for="11">Сухая</label></div>
                                 <div className="radoText"><input id="22" type="radio" value="Мытая" name="processing" /><label for="22">Мытая</label></div>
@@ -74,7 +67,7 @@ export default function CatalogCoffeeFilter() {
 
                         </div>
 
-                        <div className="spesial" onChange={(event) => data.setSpecial(event.target.value)}>
+                        <div className="spesial radioButton" onChange={(event) => data.setSpecial(event.target.value)}>
                             <div className="title">Особые</div>
                             <div className="radoText"><input id="111" type="radio" value="Популярное" name="special" /><label for="111">Популярное</label></div>
                             <div className="radoText"><input id="222" type="radio" value="Новый урожай" name="special" /><label for="222">Новый урожай</label></div>
@@ -86,7 +79,7 @@ export default function CatalogCoffeeFilter() {
 
 
                         </div>
-                        <div className="vid_coffee" onChange={(event) => data.setVid_coffee(event.target.value)}>
+                        <div className="vid_coffee radioButton" onChange={(event) => data.setVid_coffee(event.target.value)}>
                             <div className="title">Вид кофе</div>
                             <div className="radoText"><input id="1111" type="radio" value="Арабика" name="vidCoffee" /><label for="1111">Арабика</label></div>
                             <div className="radoText"><input id="2222" type="radio" value="Робуста" name="vidCoffee" /><label for="2222">Робуста</label></div>
@@ -149,7 +142,8 @@ export default function CatalogCoffeeFilter() {
 
         </div>
         <div className="filterRezult">
-        <CatalogCoffeeResult  item={rezultFilter}/>
+        <CatalogCoffeeResult key={data.length} item={data.rezultFilter}/>
+        {data.rezultFilter.length===0&&<div onClick={()=>data.setResultFilter(CatalogProduct)}>NOT FOUND     (Смотреть все)</div>}
         <div className="footerWpapper1">
           
           <img src={imageLogo} alt="image25"></img>

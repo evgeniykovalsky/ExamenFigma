@@ -27,15 +27,22 @@ export default function TovarDiscauntItem({ item }) {
     return (
         <>
             <div className="cardDiscauntItem">
-                <div className='skidky'>
-                    %
-                </div>
-                <div className='text'>Скидки</div>
-                <div className="select1">
+                {item.discaunt &&<><div className='skidky'>%</div><div className='text'>Скидки</div></>}
+               
+               {!item.discaunt&&<> 
+                <div className='text1'>{item.spesial}</div>
+               <div className="select2">
                     <select id="mySelect" value={vaga} onChange={(event) => setVaga(event.target.value)}>
                         {options}
                     </select>
                 </div>
+                </>}
+                {item.discaunt&&<> <div className="select1">
+                    <select id="mySelect" value={vaga} onChange={(event) => setVaga(event.target.value)}>
+                        {options}
+                    </select>
+                </div>
+                </>}
                 <div className="coffeDescription">
                     <div className="descImg">
                         <img src={item.photo} alt="" />

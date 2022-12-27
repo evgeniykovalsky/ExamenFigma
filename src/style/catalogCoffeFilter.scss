@@ -295,9 +295,6 @@
 
 
         }
-
-
-
         .skidky {
             background: url('../images/Ellipse 6.png') no-repeat;
             padding: 7px;
@@ -331,7 +328,21 @@
             color: #F9B300;
 
         }
+        .text1 {
+            position: relative;
+            width: 47px;
+            height: 15px;
+            left: 25px;
+            top: 25px;
 
+            font-family: $font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 15px;
+            color: #F9B300;
+
+        }
         select {
             box-sizing: border-box;
             position: relative;
@@ -342,6 +353,9 @@
             background: #FFF7E1;
             border: 0.708508px solid #F9B300;
             border-radius: 4px;
+        }
+        .select2{
+            margin-top: 70px;
         }
 
         .coffeDescription {

@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom";
 export default function HowWeCook() {
 
     return (
@@ -18,7 +18,7 @@ export default function HowWeCook() {
 
                         <span>Мы раскрываем вкус каждого сорта кофе.</span>
                     </div>
-                    <div className="cookButton"><p>Перейти в каталог</p></div>
+                    <div className="cookButton"><Link to="/catalogCoffe"> <p>Посмотреть каталог</p></Link></div>
                 </div>
                 <div className="footerHowWeWork"></div>
             </div>
