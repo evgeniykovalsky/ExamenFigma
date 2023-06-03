@@ -1,0 +1,24 @@
+.grey.active, .grey:hover {  
+    cursor: pointer;
+    background-color: cadetblue !Important;
+}
+.brandbar{
+    display:flex;
+    flex-direction: row;
+    
+    
+    .cardBrand{
+        width: auto;
+        padding: 7px;
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+}
+.cards_in_shop{
+    margin: 0 auto;
+    position: relative;
+    top:-800px;
+    left: -330px;
+    
+}

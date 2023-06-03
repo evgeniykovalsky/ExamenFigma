@@ -2,6 +2,9 @@ import React, { useState, createContext,useEffect} from "react";
 import emptyStar from '../images/Star 10.png';
 import emptyEllipse from '../images/Ellipse 42.png';
 import CatalogProduct from "../components/ProductCatalogDB";
+import UserStore from "../store/UserStore";
+import ProductStore from "../store/ProductStore";
+import shortid from "shortid";
 
 export const CoffeShopContext = createContext();
 
@@ -18,6 +21,9 @@ const Context = (props) => {
  const[vid_coffee,setVid_coffee]=useState();
  const[pribor,setPribor]=useState();
  const[rezultFilter,setResultFilter]=useState(CatalogProduct);
+
+
+ 
  
 
  useEffect(()=>{
@@ -109,12 +115,12 @@ useEffect(()=>{
         let c = [];
         for (let i = 0; i < item.grade; i++) {
 
-            c.push(<img src="../images/Star 6.png" alt="star" />);
+            c.push(<img key={shortid.generate()} src="../images/Star 6.png" alt="star" />);
         }
         if (item.grade < 5) {
             for (let i = 0; i < (5 - item.grade); i++) {
 
-                c.push(<img src={emptyStar} alt="emptyStar" />);
+                c.push(<img key={shortid.generate()} src={emptyStar} alt="emptyStar" />);
             }
         }
 
@@ -124,12 +130,12 @@ useEffect(()=>{
         let c = [];
         for (let i = 0; i < item.kislinka; i++) {
 
-            c.push(<img src="../images/Ellipse 36.png" alt="star" />);
+            c.push(<img key={shortid.generate()} src="../images/Ellipse 36.png" alt="star" />);
         }
         if (item.kislinka < 10) {
             for (let i = 0; i < (10 - item.kislinka); i++) {
 
-                c.push(<img src={emptyEllipse} alt="emptyStar" />);
+                c.push(<img key={shortid.generate()} src={emptyEllipse} alt="emptyStar" />);
             }
         }
 
@@ -139,12 +145,12 @@ useEffect(()=>{
         let c = [];
         for (let i = 0; i < item.gorchinka; i++) {
 
-            c.push(<img src="../images/Ellipse 36.png" alt="star" />);
+            c.push(<img key={shortid.generate()} src="../images/Ellipse 36.png" alt="star" />);
         }
         if (item.gorchinka < 10) {
             for (let i = 0; i < (10 - item.gorchinka); i++) {
 
-                c.push(<img src={emptyEllipse} alt="emptyStar" />);
+                c.push(<img key={shortid.generate()} src={emptyEllipse} alt="emptyStar" />);
             }
         }
 
@@ -154,12 +160,12 @@ useEffect(()=>{
         let c = [];
         for (let i = 0; i < item.nasishenost; i++) {
 
-            c.push(<img src="../images/Ellipse 36.png" alt="star" />);
+            c.push(<img key={shortid.generate()} src="../images/Ellipse 36.png" alt="star" />);
         }
         if (item.nasishenost < 10) {
             for (let i = 0; i < (10 - item.nasishenost); i++) {
 
-                c.push(<img src={emptyEllipse} alt="emptyStar" />);
+                c.push(<img key={shortid.generate()} src={emptyEllipse} alt="emptyStar" />);
             }
         }
 
@@ -169,7 +175,7 @@ useEffect(()=>{
         let c = [];
         for (let i = 0; i < item.projarka; i++) {
 
-            c.push(<img src="../images/oneZerno.png" alt="zerno" />);
+            c.push(<img key={shortid.generate()} src="../images/oneZerno.png" alt="zerno" />);
         }
        
 
@@ -179,7 +185,7 @@ useEffect(()=>{
         let c = [];
         for (let i = 0; i < count; i++) {
 
-            c.push(<img src="../images/oneZerno.png" alt="zerno" />);
+            c.push(<img key={shortid.generate()} src="../images/oneZerno.png" alt="zerno" />);
         }
         
         return c;
@@ -207,7 +213,9 @@ useEffect(()=>{
         setPribor,
         objarka,
         rezultFilter,
-        setResultFilter
+        setResultFilter,
+        user:new UserStore(),
+        product:new ProductStore()
 
 
 

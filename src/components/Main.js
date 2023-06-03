@@ -9,10 +9,12 @@ import HowWeCook from './HowWeCook';
 import News from './News';
 import Footer from './Footer';
 
+
 export default function Main() {
 
     return (
         <>
+           
             <Header />
             <CarouselBox />
             <Catalogs />

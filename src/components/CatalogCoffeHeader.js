@@ -15,7 +15,7 @@ export default function CatalogCoffeHeader() {
                     <div className='katalog'><Link to="/">Главная</Link></div>
                     <div className='katalog'><Link to="/catalogCoffe">Каталог товаров</Link></div>
                     <div className='blog'><Link to="/">Блог</Link></div>
-                    <div className='kontacts'><Link to="/">Контакты</Link></div>
+                    <div className='kontacts'><Link to="/contacts">Контакты</Link></div>
 
                 </div>
                 <div className="images">

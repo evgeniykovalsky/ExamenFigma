@@ -1,6 +1,9 @@
 import React, { useState, useContext, useEffect } from "react";
 import { CoffeShopContext } from './Context';
-import zerna from '../images/Group 175.png';
+import { useNavigate } from 'react-router-dom';
+
+import {PRODUCT_ROUTE} from "../utils/consts"
+
 
 
 
@@ -8,6 +11,8 @@ import zerna from '../images/Group 175.png';
 export default function TovarDiscauntItem({ item }) {
 
     const data = useContext(CoffeShopContext);
+    const navigate=useNavigate();
+   
 
 
 
@@ -15,7 +20,7 @@ export default function TovarDiscauntItem({ item }) {
     const [price, setPrice] = useState(item.price[0]);
     useEffect(() => {
         const index = item.vaga.indexOf(Number(vaga));
-        console.log(vaga);
+       
         setPrice(item.price[index]);
     }, [vaga]);
     
@@ -26,7 +31,7 @@ export default function TovarDiscauntItem({ item }) {
 
     return (
         <>
-            <div className="cardDiscauntItem">
+            <div className="cardDiscauntItem" onClick={()=>navigate(PRODUCT_ROUTE+'/'+item.id)}>
                 {item.discaunt &&<><div className='skidky'>%</div><div className='text'>Скидки</div></>}
                
                {!item.discaunt&&<> 
@@ -46,6 +51,7 @@ export default function TovarDiscauntItem({ item }) {
                 <div className="coffeDescription">
                     <div className="descImg">
                         <img src={item.photo} alt="" />
+                        {/* <img src={process.env.REACT_APP_API_URL + item.photo} alt="" /> добавляестя URL servera */}
                     </div>
                     <div className='descText'>
                         <div className="grade">
